@@ -27,6 +27,15 @@ namespace Product.Services
 
         public void Merge(Int32 materialIdToKeep, Int32 materialIdToDelete)
         {
+            // find list of product:
+            // 1 get all the product where has meterial by id 2
+            //
+            // 2 for each product replace 2 with 1
+            // replacement:
+            //      if  already using product 1 then quantity ++
+            //      else set productMaterial.MaterialName(1.name) set productMaterial.MaterialID (1.id)
+            // 3 remove:
+            // in material table rm by id 2
             throw new NotImplementedException("TODO: Please implement me");
         }
 
